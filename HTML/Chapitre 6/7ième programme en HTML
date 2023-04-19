@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html lang="fr">
+
+<head>
+    <meta charset="Utf-8">
+    <title>Insertion d'une vidéo</title>
+</head>
+
+<body>
+    <h1><u>Mon métier de développeur de Web!!!</u></h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MuFryJD2wTo" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+</body>
+
+</html>
