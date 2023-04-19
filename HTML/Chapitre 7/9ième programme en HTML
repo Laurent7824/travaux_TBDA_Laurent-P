@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="Utf-8">
+    <title>Mise en forme avancée d'un Tableau</title>
+</head>
+
+<body>
+    <h1><u>Tableau 2:</u></h1>
+    <table>
+        <caption>Ventes T2</caption>
+        <thead>
+            <tr>
+                <th>-------</th>
+                <th>Janvier</th>
+                <th>Février</th>
+                <th>Mars</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Total</td>
+                <td>228 200</td>
+                <td>168 900</td>
+                <td>187 600</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
