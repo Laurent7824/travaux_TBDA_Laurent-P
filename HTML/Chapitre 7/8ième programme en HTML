@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="Utf-8">
+    <title>Les Tableaux</title>
+</head>
+
+<body>
+    <h1><u>Tableau 1:</u></h1>
+    <table>
+        <caption>Vente T1</caption>
+        <tr>
+            <td>Pierre</td>
+            <td>65 800</td>
+            <td>53 200</td>
+            <td>46 400</td>
+        </tr>
+        <tr>
+            <td>Paul</td>
+            <td>88 000</td>
+            <td>51 500</td>
+            <td>62 300</td>
+        </tr>
+        <tr>
+            <td>Jacques</td>
+            <td>74 400</td>
+            <td>64 200</td>
+            <td>78 900</td>
+        </tr>
+    </table>
+</body>
+
+</html>
