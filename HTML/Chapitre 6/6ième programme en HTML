@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <img src="logo.jpg" alt="Texte alternatif de l'image">
+    <img src="logo.jpg">
 </body>
 
 </html>
