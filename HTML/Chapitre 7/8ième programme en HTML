@@ -23,7 +23,7 @@
             <td>62 300</td>
         </tr>
         <tr>
-            <td>Jacques</td>
+            <td rowspan="2">Jacques</td>
             <td>74 400</td>
             <td>64 200</td>
             <td>78 900</td>
