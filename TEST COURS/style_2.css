@@ -1,0 +1,9 @@
+p {
+    width: 400px;
+    height: 2.5em;
+    padding: 1em 1em 1em 1em;
+    border: 1px solid black;
+    color: green;
+}
+.autoscroll {overflow: auto;}
+.clipped {overflow: hidden;}
