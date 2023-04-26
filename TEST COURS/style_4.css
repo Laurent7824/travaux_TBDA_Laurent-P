@@ -1,0 +1,19 @@
+.parent {
+    border: 5px black solid;
+    display: inline-block;
+}
+.box {
+    display: inline-block;
+    background-color: rgb(113, 113, 133);
+    width: 100px;
+    height: 100px;
+}
+#two {
+    top: 20px;
+    left: 20px;
+    background-color: #74cc42;
+    position: absolute;
+}
+#four {
+    background-color: blueviolet;
+}
