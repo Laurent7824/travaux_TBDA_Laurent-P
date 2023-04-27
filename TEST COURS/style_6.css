@@ -1,0 +1,13 @@
+body {
+    display: flex;
+}
+aside {
+    background: gray;
+    width: 30%;
+    height: 300px;
+}
+article {
+    background-color: green;
+    width: 70%;
+    
+}
