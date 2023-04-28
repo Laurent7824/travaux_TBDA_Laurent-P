@@ -1,32 +1,40 @@
+header {
+    display: flex;
+}
+
+
 div {
     display: flex;
+    justify-content:flex-start;
 }
 
 span {
     display: flex;
-    text-align: right;
-
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 30px;
 }
+
 .logo {
     width: 20%;
     height: auto;
 }
 
-
-nav {
+nav,footer{
     background-color: black;
-    height: 50px;
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: .5px;
+    /*height: 25px;*/
+    margin-bottom: 5px;
+    
 }
 
 a {
     color: white;
     display: inline-block;
+    padding: 15px;
     width: 100px;
-    height: 50px;
-    border-right: 1px solid #cccccc;
+    /*height: 5px;*/
+    /*border-right: 1px solid #cccccc;*/
     text-align: center;
 }
 
@@ -42,6 +50,8 @@ section {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 14px;
+    height: auto;
+    font-size: 25px;
 }
 
 article {
@@ -60,6 +70,32 @@ h1 {
     font-size: 30px;
 }
 
-form {
+table {
     width: 30%;
+    border: 3px solid black;
+    border-radius: 1em;
+    text-align: center;
+    background-color: aqua;
+}
+
+td,
+th {
+    border: 1px solid black;
+}
+
+
+
+/**************************************WEB RESPONSIVE******************/
+
+@media screen and (max-width: 768px) {
+aside {
+    visibility: hidden;
+}
+    a{
+        display: block;
+    }
+
+    nav {
+        padding: 5px;
+    }
 }
