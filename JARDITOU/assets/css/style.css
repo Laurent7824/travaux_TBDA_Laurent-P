@@ -71,15 +71,14 @@ h1 {
 }
 
 table {
-    width: 30%;
+    width: 95%;
     border: 3px solid black;
     border-radius: 1em;
     text-align: center;
     background-color: aqua;
 }
 
-td,
-th {
+td, th {
     border: 1px solid black;
 }
 
