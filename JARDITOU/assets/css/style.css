@@ -5,7 +5,7 @@ header {
 
 div {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
 
 span {
@@ -17,15 +17,16 @@ span {
 }
 
 .logo {
-    width: 40%;
+    width: 60%;
     height: auto;
 }
 
-nav,footer{
+nav,
+footer {
     background-color: black;
     /*height: 25px;*/
     margin-bottom: 5px;
-    
+
 }
 
 a {
@@ -61,7 +62,7 @@ article {
 aside {
     background-color: gray;
     width: 20%;
-    height:auto;
+    height: auto;
     margin-top: .5px;
     margin-bottom: 1px;
     position: relative;
@@ -76,12 +77,12 @@ h1 {
 }
 
 h3 {
-color: red;
-font-size: 40px;
-font-style: italic;
-font-family: Arial, Helvetica, sans-serif;
-text-decoration: underline;
-}   
+    color: red;
+    font-size: 40px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
 
 
 table {
@@ -91,7 +92,8 @@ table {
     background-color: aqua;
 }
 
-td, th {
+td,
+th {
     border: 1px solid black;
 }
 
@@ -105,14 +107,38 @@ form {
 /**************************************WEB RESPONSIVE******************/
 
 @media screen and (max-width: 768px) {
-aside {
-    visibility: hidden;
-}
-    a{
+    aside {
+        visibility: hidden;
+    }
+
+    a {
         display: block;
     }
 
     nav {
         padding: 5px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 80%;
+        height: 80px;
+    }
+
+    span {
+
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    #entete {
+        font-size: 20px;
     }
 }
