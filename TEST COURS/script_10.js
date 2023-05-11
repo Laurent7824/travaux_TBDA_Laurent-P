@@ -6,11 +6,11 @@ var tableau = new Array(taille);
 
 //Remplir le tableau avec les valeurs saisies par l'utilisateur.
 for (var i = 0; i < taille; i++) {
-    tableau[i] = prompt("Entrez la valeur n°" + (i + 1) + ":");
+    tableau[i] = prompt("Entrez la valeur n°" + (i) + ":");
 }
 
 // Afficher le contenu du tableau
-console.log("Contenu du tableau :");
-for(var i =0; i < taille;i++){
-    console.log(tableau[i]);
+document.write("Contenu du tableau :");
+for (var i = 0; i < taille; i++) {
+    document.write(tableau[i] + "  ");
 }
