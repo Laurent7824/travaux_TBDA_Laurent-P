@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exo5.css">
+    <title>Formulaire de Contact</title>
+</head>
+
+<body>
+    <h1>Formulaire</h1>
+    <fieldset>
+        <legend>Vos coordonnées : </legend>
+        <p><strong> * </strong>Ces zones sont obligatoires pour envoyer le formulaire.</p> <br>
+        <form method="post">
+            <label for="societe">Société<strong> * </strong> :</label>
+            <input type="text" id="societe" name="societe" required minlength="1"> <br>
+            <span id="alert"></span>
+            <br>
+            <label for="personne">Personne à contacter<strong> * </strong> :</label>
+            <input type="text" id="personne" name="personne" required minlength="1"> <br>
+            <span id="alert_2"></span>
+            <br>
+            <label for="adresse">Adresse de l'entreprise :</label>
+            <textarea name="adresse" id="adresse" cols="20" rows="3"></textarea> <br>
+            <br>
+            <label for="codepostal">Code postale<strong> * </strong> :</label>
+            <input type="text" id="codepostal" required pattern="[0-9]{5}"> <br>
+            <span id="alert_3"></span>
+            <br>
+            <label for="ville">Ville<strong> * </strong> :</label>
+            <input type="text" id="ville" name="ville" required minlength="1"> <br>
+            <span id="alert_4"></span>
+            <br>
+            <label for="email">Email<strong> * </strong> :</label>
+            <input type="email" id="email" name="email" required> <br>
+            <span id="alert_5"></span>
+            <br>
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone"> <br>
+            <span id="alert_6"></span>
+            <br>
+            <label for="environ">Sélectionnez l'environnement technique du projet :</label>
+            <textarea name="environ" id="environ" cols="20" rows="3"></textarea>
+            <br>
+            <br>
+            <select class="menu" name="environ" id="environ">
+                <option value="">Choisissez...?</option>
+                <option value="access">Access</option>
+                <option value="java">Java</option>
+                <option value="delphi">Delphi</option>
+                <option value="windex">Windex</option>
+                <option value="visualbasic">Visual Basic</option>
+                <option value="powerbuider">Power Builder</option>
+                <option value="internet">Internet</option>
+                <option value="intranet">Intranet</option>
+                <option value="windowsnt">Window NT</option>
+                <option value="unix">Unix</option>
+                <option value="sqlserver">SQL Server</option>
+                <option value="oracle">Oracle</option>
+                <option value="Autres">Autres...</option>
+            </select> <br>
+            <br>
+            <input type="submit" class="button1" value="Envoyer">
+            <input type="reset" class="button2" value="Annuler">
+            <br>
+        </form>
+        <script src="exo5.js"></script>
+</body>
+
+</html>

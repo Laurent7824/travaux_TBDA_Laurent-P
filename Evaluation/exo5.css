@@ -1,0 +1,100 @@
+h1 {
+    color: green;
+    font-size: 30px;
+}
+
+legend {
+    font-size: 30px;
+}
+fieldset {
+    font-size: 25px;
+    background-color: bisque
+}
+
+p {
+    color: brown;
+    font-weight: bold;
+}
+
+strong {
+    color: red;
+    font-size: 30px;
+}
+
+/* Style pour le formulaire*/
+
+form {
+    display: contents;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style pour les labels */
+
+label {
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style pour les champs de saisie */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Style pour le bouton d'envoi */
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style pour le bouton d'envoi au survol */
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+
+/* Style pour le bouton annuler */
+
+input[type="reset"] {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style pour le bouton d'annuler au survol */
+
+input[type="reset"]:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+/* Paramétrage du menu déroulant */
+
+.menu {
+    display: block;
+    padding: 20px;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
