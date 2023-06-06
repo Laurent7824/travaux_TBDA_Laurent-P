@@ -1,65 +1,32 @@
-console.log('Connecté !');
-// Déclarations des variables
 
-const emailInput = document.getElementById("email");
-const emailError = document.getElementById("email-error");
-const personneInput = document.getElementById("personne");
-const personneError = document.getElementById("personne-error");
-const codepostalInput = document.getElementById("codepostal");
-const codepostalError = document.getElementById("codepostalError");
-const societe = document.getElementById("societe");
-const envoyer = document.getElementsByClassName("button1");
-// 
+console.log('connecté !');
+/*Déclarations des variables
 
-societe.addEventListener("input", function event)
-// Vérification de l'adresse Mail...
+var emailInput = document.getElementById("email");
+var emailError = document.getElementById("email-error");
+var personneInput = document.getElementById("personne");
+var personneError = document.getElementById("personne-error");
+var codepostalInput = document.getElementById("codepostal");
+var codepostalError = document.getElementById("codepostalError");
+var societeInput = document.getElementById("societe");
+var envoyer = document.getElementsByClassName("button1");
+*/
 
-emailInput.addEventListener("input", function (event) {
-    if (!emailInput.checkValidity()) {
-        emailError.textContent = alert("Veuillez rentrez une adresse Email valide svp ! :"); // Représente le contenu textuel
-        emailError.style.display = "block";
+function validerFormulaire(){
+    var societe = document.getElementById("societe").value;
+    var personne = document.getElementById("personne").value;
+    var adresse = document.getElementById("adresse").value;
+    var codepostal = document.getElementById("codepostal").value;
+    var ville = document.getElementById("ville").value;
+    var email = document.getElementById("email").value;
+    var telephone = document.getElementById("telephone").value;
+    if(societe == "" || personne == "" ||
+    adresse == "" || codepostal == "" || ville == "" ||
+    email== "" || telephone == "") {
+        alert("veuillez remplir tous les champs du formulaire !!!");
+        return false;
     }
-    else {
-        emailError.textContent = "";
-        emailError.style.display = "none";
+    else{
+        return true;
     }
-});
-
-// Vérification de la personne à contacter...
-
-personneInput.addEventListener("input", function (event) {
-    if (!personneInput.checkValidity()) {
-        personneError.textContent = alert("Veuillez rentrez le nom de la personne à contacter svp !");
-        personneError.style.display = "block";
-    }
-    else {
-        personneError.textContent = "";
-        personneError.style.display = "none";
-    }
-});
-
-// Vérification du code postal...
-
-codepostalInput.addEventListener("input", function (event) {
-    if (!codepostalInput.checkValidity()) {
-        codepostalError.textContent = alert("Veuillez rentrez le code postal svp !");
-        codepostalError.style.display = "block";
-    }
-    else {
-        personneError.textContent = "";
-        personneError.style.display = "none";
-    }
-});
-
-//  Vérification du click sur le bouton envoi
-
-document.querySelector('.button1').onclick = function () {
-    alert('Formulaire envoyé !');
 }
-
-// Vérification du click sur le bouton annulé
-
-document.querySelector('.button2').onclick = function () {
-    alert('Formulaire refusé !');
-}
-
