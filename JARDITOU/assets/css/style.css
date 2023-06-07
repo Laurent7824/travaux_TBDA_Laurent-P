@@ -8,7 +8,7 @@ div {
     justify-content: flex-start;
 }
 
-span {
+#entete {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
