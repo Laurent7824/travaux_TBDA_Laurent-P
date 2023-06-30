@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Tableau Bootstrap</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#"><img src="/JARDITOU/assets/img/jarditou_logo-removebg-preview.png"
+                            alt="Logo" height="40"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ms-2">
+                                <a class="nav-link text-white fs-4 ms-5" href="/JARDITOU/indexBoot.html">Accueil</a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link text-white fs-4 ms-5" href="/JARDITOU/tableauBoot.html">Tableau</a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link text-white fs-4 ms-5" href="/JARDITOU/contactBoot.html">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex ms-auto"> <!-- Ajouter la classe ms-auto ici -->
+                            <input class="form-control me-2" type="search" placeholder="Votre promotion"
+                                aria-label="Search">
+                            <button class="btn btn-outline btn-success" type="submit">Rechercher</button>
+                        </form>
+                    </div>
+            </div>
+            </nav>
+        </div>
+        </div>
+        <div class="row">
+            <img src="/JARDITOU/assets/img/promotion.jpg" width="100%" height="200px" alt="promotion">
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-lg-8 col-sm-12">
+            <br>
+            <h1>Tableau</h1>
+            <hr>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Photos</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Catégorie</th>
+                        <th scope="col">Libellé</th>
+                        <th scope="col">Prix</th>
+                        <th scope="col">Couleur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-warning">
+                        <td><img src="/JARDITOU/assets/img/7.jpg" width="120" height="120" alt="barbecues"></td>
+                        <td>7</td>
+                        <td>Barbecues</td>
+                        <td>Aramis</td>
+                        <td>110.000€</td>
+                        <td>Brun</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/JARDITOU/assets/img/8.jpg" width="120" height="120" alt="Barbecues"></td>
+                        <td>8</td>
+                        <td>Barbecues</td>
+                        <td>Athos</td>
+                        <td>249.99€</td>
+                        <td>Bleu</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td><img src="/JARDITOU/assets/img/11.jpg" width="120" height="120" alt="Barbecues"></td>
+                        <td>11</td>
+                        <td>Barbecues</td>
+                        <td>Clatronic</td>
+                        <td>135.90€</td>
+                        <td>Chrome</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/JARDITOU/assets/img/12.jpg" width="120" height="120" alt="Barbecues"></td>
+                        <td>12</td>
+                        <td>Barbecues</td>
+                        <td>Camping</td>
+                        <td>88.00€</td>
+                        <td>Noir</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td><img src="/JARDITOU/assets/img/13.jpg" width="120" height="120" alt="Brouette"></td>
+                        <td>13</td>
+                        <td>Brouette</td>
+                        <td>Green</td>
+                        <td>49.00€</td>
+                        <td>Verte</td>
+                    </tr>
+                    <!-- Ajouter les autres lignes ici -->
+                </tbody>
+            </table>
+        </div>
+        <aside class="col-lg-4 col-sm-12 bg-warning">
+            <h1>Colonne de droite</h1>
+        </aside>
+    </div>
+    </div>
+    <footer>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-2">
+                            <a class="nav-link text-white fs-4 ms-5" href="/JARDITOU/indexBoot.html">Mentions
+                                légales</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link text-white fs-4 ms-5" href="#">Horaires</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link text-white fs-4 ms-5" href="#">Plan du site</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

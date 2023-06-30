@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#"><img src="/JARDITOU/assets/img/jarditou_logo-removebg-preview.png"
+                            alt="Logo" height="40"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ms-2">
+                                <a class="nav-link text-white fs-4 ms-5" href="/JARDITOU/indexBoot.html">Accueil</a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link text-white fs-4 ms-5" href="/JARDITOU/tableauBoot.html">Tableau</a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link text-white fs-4 ms-5" href="/JARDITOU/tableauBoot.html">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex ms-auto"> <!-- Ajouter la classe ms-auto ici -->
+                            <input class="form-control me-2" type="search" placeholder="Votre promotion"
+                                aria-label="Search">
+                            <button class="btn btn-outline btn-success" type="submit">Rechercher</button>
+                        </form>
+                    </div>
+            </div>
+            </nav>
+        </div>
+        </div>
+        <div class="row">
+            <img src="/JARDITOU/assets/img/promotion.jpg" width="100%" height="200px" alt="promotion">
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-lg-8 col-sm-12">
+            <div class="container mt-4">
+                <h1>Contact</h1>
+                <hr>
+                <form id="formulaire" action="#" method="POST">
+
+                    <!-- Zone "Vos Cordonnées" -->
+                    <div class="mb-3">
+                        <h2>* Vos Cordonnées</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="nom" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="nom" name="nom" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="prenom" class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="prenom" name="prenom" required>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <label class="form-label">Sexe</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sexe" id="masculin" value="masculin"
+                                    required>
+                                <label class="form-check-label" for="masculin">
+                                    Masculin
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sexe" id="feminin" value="feminin"
+                                    required>
+                                <label class="form-check-label" for="feminin">
+                                    Féminin
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label for="dateNaissance" class="form-label">Date de Naissance</label>
+                                <input type="text" class="form-control" id="dateNaissance" name="dateNaissance"
+                                    placeholder="jj/mm/aaaa" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="codePostal" class="form-label">Code Postal</label>
+                                <input type="text" class="form-control" id="codePostal" name="codePostal" required>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="adresse" class="form-label">Adresse</label>
+                            <input type="text" class="form-control" id="adresse" name="adresse" required>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="ville" class="form-label">Ville</label>
+                            <input type="text" class="form-control" id="ville" name="ville" required>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <!-- Zone "Votre demande" -->
+                    <div class="mb-3">
+                        <h2>* Votre demande</h2>
+                        <div class="mt-3">
+                            <label for="sujet" class="form-label">Sujet</label>
+                            <select class="form-select" id="sujet" name="sujet" required>
+                                <option value="">Veuillez sélectionner un sujet</option>
+                                <option value="sujet1">Sujet 1</option>
+                                <option value="sujet2">Sujet 2</option>
+                                <option value="sujet3">Sujet 3</option>
+                            </select>
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="question" class="form-label">Votre question</label>
+                            <textarea class="form-control" id="question" name="question" rows="3" required></textarea>
+                        </div>
+
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="accepter" name="accepter" required>
+                            <label class="form-check-label" for="accepter">
+                                J'accepte le traitement informatique de ce formulaire
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Boutons "Envoyer" et "Annuler" -->
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-success">Envoyer</button>
+                        <button type="reset" class="btn btn-danger">Annuler</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <aside class="col-lg-4 col-sm-12 bg-warning">
+            <h1>Colonne de droite</h1>
+        </aside>
+    </div>
+    <footer>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-2">
+                            <a class="nav-link text-white fs-4 ms-5" href="/JARDITOU/indexBoot.html">Mentions
+                                légales</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link text-white fs-4 ms-5" href="#">Horaires</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link text-white fs-4 ms-5" href="#">Plan du site</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
